@@ -1,0 +1,3 @@
+<% Merb::Router.named_routes.keys.each do |name| -%>
+<%= register_js_route(name) %>
+<% end -%>

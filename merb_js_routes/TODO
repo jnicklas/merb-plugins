@@ -1,0 +1,7 @@
+TODO:
+
+- Fix MerbJsRoutes.description and MerbJsRoutes.version
+- Fix LICENSE with your name
+- Fix Rakefile with your name and contact info
+- Add your code to lib/merb_js_routes.rb
+- Add your Merb rake tasks to lib/merb_js_routes/merbtasks.rb
