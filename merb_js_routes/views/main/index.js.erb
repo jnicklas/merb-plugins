@@ -1,3 +1,4 @@
+if(window.Url === undefined) var Url = {};
 <% Merb::Router.named_routes.keys.each do |name| -%>
-<%= register_js_route(name) %>
+<%= js_route(name) %>
 <% end -%>

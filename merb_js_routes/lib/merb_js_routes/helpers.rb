@@ -2,12 +2,8 @@ module MerbJsRoutes
   
   module Helpers
     
-    def register_js_route(name)
-      "Url.register(#{name.to_json}, #{js_route(name)});"
-    end
-    
     def js_route(name)
-      "function(params) { return #{get_segments_for_js_route(name)}; }"
+      "Url.#{name} = function(params) { return #{get_segments_for_js_route(name)}; }"
     end
     
     protected
