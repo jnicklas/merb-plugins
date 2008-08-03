@@ -9,12 +9,14 @@ end then mount the slice to your root in your router.rb like this:
 
     r.slice(MerbJsRoutes, :path => "")
 
-Adding add Routes
+Adding all Routes
 -----------------
 
 In order to gain access to all routes, simply include the file /javascripts/routes.js in the head of your document, if you are using merb-assets, like this:
 
     <%= js_include_tag 'routes.js' %>
+
+This is convenient, but might be overkill if you only need a few select routes.
 
 Adding selected routes
 ----------------------
