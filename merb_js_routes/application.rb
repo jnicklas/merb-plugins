@@ -29,7 +29,10 @@ module MerbJsRoutes
     
     def index
       only_provides :js
-      render :layout => false
+      <<-JS.to_a.map{|l| l.strip}.join("\n")
+        if(window.Url === undefined) var Url = {};
+        #{js_routes Merb::Router.named_routes.keys}
+      JS
     end
     
   end

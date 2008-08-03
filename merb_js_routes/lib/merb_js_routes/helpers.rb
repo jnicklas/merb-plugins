@@ -2,6 +2,11 @@ module MerbJsRoutes
   
   module Helpers
     
+    def js_routes(names, *more)
+      names = more.unshift(names) if more.any?
+      names.map{ |name| js_route(name) }.join("\n")
+    end
+    
     def js_route(name)
       "Url.#{name} = function(params) { return #{get_segments_for_js_route(name)}; }"
     end
