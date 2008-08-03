@@ -4,10 +4,10 @@ require 'merb-core/version'
 require 'merb-core/tasks/merb_rake_helper'
 
 NAME = "merb_js_routes"
-AUTHOR = "Your Name"
-EMAIL = "Your Email"
+AUTHOR = "Jonas Nicklas"
+EMAIL = "jonas.nicklas@gmail.com"
 HOMEPAGE = "http://merbivore.com/"
-SUMMARY = "Merb Slice that provides ..."
+SUMMARY = "Merb route generation from JavaScript"
 GEM_VERSION = "0.9.4"
 
 spec = Gem::Specification.new do |s|

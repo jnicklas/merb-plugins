@@ -16,9 +16,9 @@ if defined?(Merb::Plugins)
   module MerbJsRoutes
     
     # Slice metadata
-    self.description = "MerbJsRoutes is a thin Merb slice!"
-    self.version = "0.0.1"
-    self.author = "YOUR NAME"
+    self.description = "Merb route generation from JavaScript"
+    self.version = "0.9.4"
+    self.author = "Jonas Nicklas"
     
     # Stub classes loaded hook - runs before LoadClasses BootLoader
     # right after a slice's classes have been loaded internally.
