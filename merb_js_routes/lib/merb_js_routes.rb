@@ -47,7 +47,7 @@ if defined?(Merb::Plugins)
     # @note prefix your named routes with :merb_js_routes_
     #   to avoid potential conflicts with global named routes.
     def self.setup_router(scope)
-      scope.match('/javascripts/all_routes.js').to(:controller => 'main', :action => 'index', :format => 'js')
+      scope.match('/javascripts/routes.js').to(:controller => 'main', :action => 'index', :format => 'js')
     end
     
     # This sets up a thin slice's structure.
