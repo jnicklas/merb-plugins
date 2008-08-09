@@ -3,7 +3,7 @@ class <%= class_name %> < ActiveRecord::Migration
 <% if model -%>
     create_table :<%= table_name %> do |t|
 <% attributes.each do |name, type| -%>
-      t.<%= name %> :<%= type %> 
+      t.<%= type %> :<%= name %> 
 <% end -%>
   
       t.timestamps
